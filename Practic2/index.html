@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблиці та списки</title>
+    <style>
+        table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+        th, td { border: 1px solid black; padding: 8px; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <h2>Розклад занять на тиждень</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Час</th>
+                <th>Понеділок</th>
+                <th>Вівторок</th>
+                <th>Середа</th>
+                <th>Четвер</th>
+                <th>П'ятниця</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>08:30-10:05</td>
+                <td>Математика</td>
+                <td>Фізика</td>
+                <td>Хімія</td>
+                <td>Історія</td>
+                <td>Англійська</td>
+            </tr>
+            <tr>
+                <td>10:25-12:00</td>
+                <td>Бази даних</td>
+                <td>Веб-технології</td>
+                <td>Фізкультура</td>
+                <td>Право</td>
+                <td>Програмування</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Таблиця з об'єднаними комірками</h2>
+    <table>
+        <tr>
+            <th rowspan="2">Предмет</th>
+            <th colspan="2">Аудиторії</th>
+        </tr>
+        <tr>
+            <th>Лекції</th>
+            <th>Практика</th>
+        </tr>
+        <tr>
+            <td>Веб-технології</td>
+            <td>402</td>
+            <td>505</td>
+        </tr>
+    </table>
+
+    <h2>Списки</h2>
+
+    <h3>Багаторівневий список меню сайту</h3>
+    <ul>
+        <li>Головна</li>
+        <li>Навчання
+            <ul>
+                <li>Лабораторні роботи
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Список з різними маркерами</h3>
+    <ul style="list-style-type: square;">
+        <li>Квадратний маркер</li>
+        <ul style="list-style-type: circle;">
+            <li>Круглий маркер</li>
+        </ul>
+    </ul>
+
+    <h3>Нумерований список з різними типами</h3>
+    <ol type="I">
+        <li>Римські цифри</li>
+        <ol type="a">
+            <li>Літерна нумерація</li>
+            <li type="1">Арабські цифри</li>
+        </ol>
+    </ol>
+
+    <h3>Список визначень</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Мова розмітки гіпертексту.</dd>
+        <dt>CSS</dt>
+        <dd>Каскадні таблиці стилів.</dd>
+    </dl>
+
+</body>
+</html>
