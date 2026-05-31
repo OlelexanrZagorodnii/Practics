@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNews - Світ технологій</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #2c3e50;
+            color: white;
+            flex-wrap: wrap;
+        }
+        .logo img { height: 50px; display: block; }
+        .nav-links { display: flex; list-style: none; gap: 20px; align-items: center; }
+        .nav-links a { color: white; text-decoration: none; font-weight: bold; }
+        .nav-links a:hover { color: #f1c40f; }
+        .search-box input { padding: 8px; border-radius: 4px; border: none; }
+
+        .wrapper { display: flex; gap: 20px; padding: 20px; max-width: 1200px; margin: auto; }
+        .main-content { flex: 3; padding: 20px; background: #fff; border: 1px solid #ddd; }
+        .sidebar { flex: 1; padding: 20px; background: #f9f9f9; border: 1px solid #ddd; }
+
+        .cards { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+            padding: 20px; 
+            justify-content: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .card { 
+            flex: 1 1 300px; 
+            border: 1px solid #ddd; 
+            background: #fff; 
+            text-align: center;
+            transition: transform 0.3s;
+            overflow: hidden; /* Щоб картинка не вилазила за краї */
+        }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        
+        /* Стилі для картинок у картках */
+        .card img {
+            width: 100%;
+            height: 200px; /* Фіксована висота для всіх карток */
+            object-fit: cover; /* Щоб картинка заповнювала простір і не спотворювалася */
+            margin-bottom: 15px;
+        }
+        .card-content { padding: 15px; }
+
+        footer { 
+            padding: 2rem; 
+            background: #2c3e50; 
+            color: #fff; 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 40px; 
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .footer-col { min-width: 200px; }
+
+        @media (max-width: 768px) {
+            .wrapper { flex-direction: column; }
+            header { flex-direction: column; gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">
+            <img src="images.png" alt="TechNews">
+        </a>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li><a href="#">Про нас</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="search" placeholder="Пошук...">
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main-content">
+            <h2>Чому за технологіями майбутнє?</h2>
+            <p>Світ змінюється швидше, ніж будь-коли. Штучний інтелект, автоматизація та нові методи розробки — це не просто тренди, це фундамент нашого професійного життя.</p>
+        </main>
+        <aside class="sidebar">
+            <h3>Актуальне</h3>
+            <ul>
+                <li>Оновлення Python 3.12</li>
+                <li>Тренди в Web-дизайні 2026</li>
+            </ul>
+        </aside>
+    </div>
+
+    <section class="cards">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2L2N0wU4AEsTIi-3TvKu1PlFd2e0qZ2oStg&s" alt="Смартфон">
+            <div class="card-content">
+                <h3>Смартфони</h3>
+                <p>Огляди найновіших флагманів на ринку.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://cdn.thewirecutter.com/wp-content/media/2024/07/laptopstopicpage-2048px-3685-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp" alt="Ноутбук">
+            <div class="card-content">
+                <h3>Ноутбуки</h3>
+                <p>Як вибрати ідеальний пристрій для роботи.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAEKoduVE6XhZm_1_PuPp6BcNyMGhAaFBAag&s" alt="Аксесуари">
+            <div class="card-content">
+                <h3>Аксесуари</h3>
+                <p>Навушники та клавіатури для професіоналів.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-col">
+            <h3>Контакти</h3>
+            <p>Email: contact@technews.ua</p>
+        </div>
+        <div class="footer-col">
+            <h3>Соцмережі</h3>
+            <p>Instagram: @technews</p>
+        </div>
+        <div class="footer-col">
+            <h3>Адреса</h3>
+            <p>м. Київ, вул. Технологічна, 1</p>
+        </div>
+    </footer>
+
+</body>
+</html>
