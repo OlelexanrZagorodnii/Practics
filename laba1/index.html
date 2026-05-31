@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семантична структура сторінки</title>
+    <meta name="description" content="Приклад сторінки з правильною семантичною розміткою HTML5">
+</head>
+<body>
+
+    <header>
+        <h1>Логотип Компанії</h1>
+        <nav aria-label="Головне меню">
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#services">Послуги</a></li>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#blog">Блог</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="blog">
+            <h2>Останні публікації</h2>
+            
+            <article>
+                <h3>Як працює семантичний HTML</h3>
+                <p>Ну він працює</p>
+            </article>
+
+            <article>
+                <h3>Переваги тегу Main</h3>
+                <p>Ну він прикольно</p>
+            </article>
+        </section>
+
+        <aside aria-label="Додаткова інформація">
+            <h3>Пошук</h3>
+            <form action="/search" method="get">
+                <input type="search" name="q" placeholder="Пошук по сайту..." aria-label="Поле для пошуку">
+                <button type="submit">Шукати</button>
+            </form>
+
+            <h3>Соціальні мережі</h3>
+            <ul>
+                <li><a href="#">Telegram</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <section id="contacts">
+            <h3>Контакти</h3>
+            <p>Email: info@example.com</p>
+            <p>Телефон: +380 00 000 00 00</p>
+        </section>
+        
+        <p>&copy; 2026 Назва Компанії. Всі права захищені.</p>
+    </footer>
+
+</body>
+</html>
